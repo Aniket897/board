@@ -2,6 +2,7 @@ import { RefObject, useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { createTask } from "../store/slices/taskSlice";
 import { AppDispatch } from "../store/store";
+import Loader from "./Loader";
 
 interface AddTaskProps {
   onClose: () => void;
@@ -9,6 +10,7 @@ interface AddTaskProps {
 
 const AddTask = ({ onClose }: AddTaskProps) => {
   const [name, setName] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const dispatch: AppDispatch = useDispatch();
   const modalRef: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
@@ -16,8 +18,11 @@ const AddTask = ({ onClose }: AddTaskProps) => {
 
   const handleCreate = () => {
     if (!name) return;
-    dispatch(createTask(name));
-    onClose();
+    setLoading(true);
+    dispatch(createTask(name)).finally(() => {
+      setLoading(false);
+      onClose();
+    });
   };
 
   useEffect(() => {
@@ -53,7 +58,7 @@ const AddTask = ({ onClose }: AddTaskProps) => {
             className="bg-blue-500 p-2 px-4 rounded-md text-white hover:bg-blue-600 duration-200"
             onClick={handleCreate}
           >
-            Submit
+            {loading ? <Loader /> : "Submit"}
           </button>
         </div>
       </div>
