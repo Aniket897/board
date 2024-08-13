@@ -1,0 +1,90 @@
+{
+  "lanes": [
+    {
+      "id": "lane1",
+      "label": "To do",
+      "name": "Todo"
+    },
+    {
+      "id": "lane2",
+      "label": "In Progress",
+      "name": "Progress"
+    },
+    {
+      "id": "lane3",
+      "label": "Done",
+      "name": "Done"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "51f98fcc-200f-4478-848a-5a171f840f6f",
+      "name": "first task",
+      "laneId": "lane3",
+      "timestamps": {
+        "created": 1723551879308,
+        "progress": null,
+        "done": null
+      },
+      "history": [
+        "created at 13 Aug  17:54"
+      ]
+    },
+    {
+      "id": "277895cf-16fd-4d33-a786-83d9c2c9621d",
+      "name": "make a video for online classes",
+      "laneId": "lane3",
+      "timestamps": {
+        "created": 1723552573787,
+        "progress": null,
+        "done": null
+      },
+      "history": [
+        "created at 13 Aug  18:06"
+      ]
+    },
+    {
+      "id": "146128ad-e740-44f0-8a95-ccad19a00d11",
+      "name": "hello from aniket",
+      "laneId": "lane3",
+      "timestamps": {
+        "created": 1723552896636,
+        "progress": null,
+        "done": null
+      },
+      "history": [
+        "created at 13 Aug  18:11"
+      ]
+    },
+    {
+      "id": "0e4b4aac-5f52-48d6-b1c3-d6c1bcadc261",
+      "name": "make a resume and share with company",
+      "laneId": "lane3",
+      "timestamps": {
+        "created": 1723553240796,
+        "progress": null,
+        "done": null
+      },
+      "history": [
+        "created at 13 Aug  18:17",
+        "Mark as Progress at 13 Aug 0608",
+        "Mark as Done at 13 Aug  18:18"
+      ]
+    },
+    {
+      "id": "a0d78a22-d64e-4226-92ba-a4b0d19a4dd6",
+      "name": "join a telegram group of meta community",
+      "laneId": "lane3",
+      "timestamps": {
+        "created": 1723553448775,
+        "progress": null,
+        "done": null
+      },
+      "history": [
+        "created at 13 Aug  18:20",
+        "Mark as Progress at 13 Aug  18:20",
+        "Mark as Done at 13 Aug  18:20"
+      ]
+    }
+  ]
+}
