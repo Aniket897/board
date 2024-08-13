@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "server": "npx json-server db.json",
+    "build:server": "npm install",
+    "start:server": "node server.js",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "server": "npx json-server db.json"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
